@@ -6,9 +6,6 @@ import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 import java.util.List;
 
-/**
- * Created by zhangyl27 on 2014/10/9.
- */
 public class DBUserDAO extends HibernateDaoSupport implements UserDAO {
 
     @Override

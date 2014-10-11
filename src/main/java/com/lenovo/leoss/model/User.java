@@ -3,9 +3,6 @@ package com.lenovo.leoss.model;
 import javax.persistence.*;
 import java.util.Date;
 
-/**
- * Created by zhangyl27 on 2014/10/9.
- */
 @Entity
 @Table(name = "admin_user")
 public class User {

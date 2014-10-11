@@ -7,9 +7,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * Created by zhangyl27 on 2014/10/9.
- */
 @Component
 public class UserService {
 

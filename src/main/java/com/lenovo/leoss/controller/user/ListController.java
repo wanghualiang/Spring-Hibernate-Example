@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-/**
- * Created by zhangyl27 on 2014/10/9.
- */
 @Controller
 @RequestMapping("/user")
 public class ListController {
