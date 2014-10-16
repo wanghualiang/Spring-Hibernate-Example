@@ -13,10 +13,14 @@
 </head>
 <body>
     <h1>展示所有用户的列表页面</h1>
-    <table>
-        <tr><td>name</td><td>email</td><td>注册时期</td></tr>
+    <table cellpadding="5" cellspacing="1" border="1">
+        <tr>
+            <td>email</td><td>contactName</td><td>phone</td><td>注册时期</td>
+        </tr>
         <c:forEach var="u" items="${users}">
-        <tr><td>${u.name}</td><td>${u.email}</td><td>${u.createdAt}</td></tr>
+        <tr>
+            <td>${u.email}</td><td>${u.contactName}</td><td>${u.phone}</td><td>${u.ctime}</td>
+        </tr>
         </c:forEach>
     </table>
 </body>

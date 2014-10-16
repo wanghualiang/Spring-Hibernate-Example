@@ -1,0 +1,10 @@
+<html>
+<body>
+<h3>Hi ${user.loginName},</h3>
+
+<div>
+    Your sign-up activation link is <a href="mailto:${activationLink}">${activationLink}</a>.
+</div>
+</body>
+
+</html>

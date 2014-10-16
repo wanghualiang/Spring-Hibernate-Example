@@ -4,6 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Service配置于此 -->
-    <bean id="userService" class="com.lenovo.leoss.service.UserService" />
+<!--     <bean id="userService" class="com.lenovo.leoss.service.UserService" />
+    <bean id="keyService" class="com.lenovo.leoss.service.KeyService" /> -->
+
+    <bean id="imageCaptchaService" class="com.octo.captcha.service.image.DefaultManageableImageCaptchaService" />
 
 </beans>

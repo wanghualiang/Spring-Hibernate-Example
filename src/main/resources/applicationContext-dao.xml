@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="locations">
-            <list>
-                <value>classpath:config.properties</value>
-            </list>
-        </property>
-    </bean>
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <!-- JDBC -->
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
@@ -33,17 +26,23 @@
         <property name="annotatedClasses">
             <list>
                 <value>com.lenovo.leoss.model.User</value>
+                <value>com.lenovo.leoss.model.Key</value>
             </list>
         </property>
     </bean>
 
     <!-- 事务管理器，此处为Hibernate的事务管理器 -->
-    <!--
-    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager" />
-    -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
 
     <!-- DAOs -->
     <bean id="userDAO" class="com.lenovo.leoss.dao.impl.DBUserDAO">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <bean id="keyDAO" class="com.lenovo.leoss.dao.impl.DBKeyDAO">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 

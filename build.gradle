@@ -6,6 +6,12 @@ apply plugin: 'war'
 sourceCompatibility = 1.7
 version = '1.0'
 
+compileJava {
+    options.fork = true
+    options.forkOptions.executable = "javac" // assumes that javac is on PATH
+    options.compilerArgs << "-XDignore.symbol.file"
+}
+
 repositories {
     mavenLocal()
     maven { url "http://10.100.120.245:8081/nexus/content/groups/public/" }
@@ -18,10 +24,23 @@ dependencies {
             "mysql:mysql-connector-java:5.1.33",
             "org.slf4j:slf4j-api:1.7.7",
             "jstl:jstl:1.2",
-            "org.springframework:spring-webmvc:3.2.0.RELEASE",
-            "org.springframework:spring-hibernate3:2.0.8",
+            "com.octo.captcha:jcaptcha:1.0",
+            "org.springframework:spring-webmvc:3.2.8.RELEASE",
+            "org.springframework.security:spring-security-web:3.2.5.RELEASE",
+            "org.springframework.security:spring-security-config:3.2.5.RELEASE",
+            "org.springframework.security:spring-security-taglibs:3.2.5.RELEASE",
+//            "org.springframework:spring-hibernate3:2.0.8",
+            "org.springframework:spring-orm:3.2.11.RELEASE",
+            "org.springframework:spring-context:3.2.11.RELEASE",
+            "org.springframework:spring-context-support:3.2.11.RELEASE",
+            "org.hibernate:hibernate:3.2.7.ga",
             "org.hibernate:hibernate-annotations:3.4.0.GA",
-            "org.apache.commons:commons-dbcp2:2.0.1"
+            "org.hibernate:hibernate-validator:4.3.2.Final",
+            "org.apache.commons:commons-dbcp2:2.0.1",
+            "javax.validation:validation-api:1.0.0.GA",
+            "javax.mail:mail:1.4.7",
+            "org.apache.velocity:velocity:1.7",
+            "org.codehaus.jackson:jackson-mapper-asl:1.7.1"
     )
     testCompile (
             "org.springframework:spring-test:3.2.0.RELEASE",

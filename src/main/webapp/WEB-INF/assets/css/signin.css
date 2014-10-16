@@ -1,0 +1,96 @@
+.block {
+    width: 530px;
+    text-align: left;
+    box-shadow: 0px 0px 7px rgba(200, 200, 200, 0.75);
+    width: 280px;
+    margin: 90px auto 0px;
+    padding: 30px 125px;
+    border: 1px solid #C9CCD0;
+    background-color: #FAFAFA;
+    font-size: 12px;
+    color: #787878;
+}
+.i-line{
+    margin:0 auto;
+    margin-top:15px;
+    width: 350px;
+}
+.login-form{
+	margin: 30px auto 0;
+    width: 280px;
+    text-align: left;
+    font-size: 12px;
+}
+.login-form .title {
+    height: 22px;
+    margin-bottom: 16px;
+    margin-top: 34px;
+    color: #0c94de;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+.login-form .login{
+	width: 137px;
+	height: 30px;
+	line-height: 1;
+	background:#1e82ca;
+	background-image: -moz-linear-gradient(center bottom , #1e82ca 0px, #5ebce6 100%);
+	border: 1px solid #1e82ca;
+	color: #fff;
+	font-size: 14px;
+}
+.login-form .remember-line{
+	height: 20px;
+	width: 285px;
+	text-align: left;
+	height: 17px;
+}
+.login-form .line{
+	position: relative;
+	margin-top:15px;
+    vertical-align: middle;
+}
+.login-form .l-input{
+	width:270px;
+	height:28px;
+	line-height:28px;
+	margin-top:10px;
+	padding:5px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset;
+	border:1px solid #CCC;
+	border-radius: 2px;
+}
+.login-form ..s-input{
+	width:64px;
+	height:28px;
+	line-height:28px;
+	margin-top:10px;
+	padding:5px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset;
+	border:1px solid #CCC;
+	border-radius: 2px;
+}
+.login-form .ableft{
+	width:150px;
+	text-align:left;
+	display:inline-block;
+}
+.login-form .abright{
+	display:inline-block;
+	width:125px;
+	text-align:right;
+	
+}
+.login-form .abright a{
+	color:#0c94de;
+}
+
+.login-form #validate_img{
+	cursor:pointer;
+	height:80px;
+	width:200px;
+}
+a {
+    text-decoration: none;
+}

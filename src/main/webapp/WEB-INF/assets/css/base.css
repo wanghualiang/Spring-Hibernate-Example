@@ -1,0 +1,71 @@
+.leoss-box .i-base{
+    width: 475px;
+    min-height: 520px;
+    border-radius: 4px;
+    border: 1px solid #CCCCCC;
+}
+.leoss-box .i-base .p-info{
+    font-size: 20px;
+    color: #323232;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.leoss-box .i-base .i-top{
+    margin-top: 15px;
+}
+.leoss-box .i-base .horizontal-line {
+    border-top: 1px solid #CCCCCC;
+    min-height: 1px;
+    height: 1px;
+    width: 425px;
+}
+.leoss-box .i-base .i-line{
+    margin-left: 25px;
+}
+.leoss-box .i-base .i-line .t-left{
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    color: #323232;
+    height: 30px;
+    line-height: 30px;
+}
+.leoss-box .i-base .i-line .t-right{
+    padding-left: 9px;
+    color: #585858;
+}
+.leoss-box .i-base .i-line a{
+    display: inline;
+    width: 80px;
+    height: 30px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #eff0f3;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 28px;
+    color: #666666!important;
+    text-decoration: none;
+    float: right;
+    margin-right: 30px;
+    background-image: -o-linear-gradient(bottom,#ddd 0,#f0f0f0 100%);
+    background-image: -moz-linear-gradient(bottom,#ddd 0,#f0f0f0 100%);
+    background-image: -webkit-linear-gradient(bottom,#ddd 0,#f0f0f0 100%);
+    background-image: -webkit-gradient(linear,left bottom,left top,from(#ddd),to(#f0f0f0));
+    background-image: linear-gradient(bottom,#ddd 0,#f0f0f0 100%);
+    -webkit-box-shadow: inset 0 1px 3px #aaa;
+    box-shadow: inset 0 1px 3px #aaa;
+}
+.leoss-box .i-base .i-line .i-edit{
+    width: 235px;
+    height: 16px;
+    line-height: 16px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #CCCCCC;
+}
+.leoss-box .i-base .i-line .i-unedit{
+    border: 0px;
+    background: #ffffff;
+    padding: 6px;
+}
