@@ -62,7 +62,7 @@ define('leoss/signin', function(require, exports, module) {
                     $('#verify').focus();
                     return false;
                 }else{
-                    location.href ="/leoss_portal/user/signin";
+                    location.href ="/Spring-Hibernate-Example/user/signin";
                 }
             } else if (ret.code != 200) {
                 if (++errCount >= 3) {

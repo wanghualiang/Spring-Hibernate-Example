@@ -1,4 +1,4 @@
-var l_path = location.href.indexOf("/leoss_portal") >= 0 ? '/leoss_portal' : '';
+var l_path = location.href.indexOf("/Spring-Hibernate-Example") >= 0 ? '/Spring-Hibernate-Example' : '';
 seajs.config({
 	base: "/",
 	paths: {

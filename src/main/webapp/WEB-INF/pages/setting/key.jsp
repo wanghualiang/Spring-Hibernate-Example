@@ -7,7 +7,7 @@
 <head>
     <title>密钥</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="/leoss_portal/assets/css/key.css"/>
+	<link rel="stylesheet" href="/Spring-Hibernate-Example/assets/css/key.css"/>
     
 </head>
 <body>

@@ -8,7 +8,7 @@
     <title>用户信息编辑页面</title>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <link rel="stylesheet" href="/leoss_portal/assets/css/base.css"/>
+    <link rel="stylesheet" href="/Spring-Hibernate-Example/assets/css/base.css"/>
     <style>
         .error{
             color: red;
@@ -19,7 +19,7 @@
 <%@include file="../include/header.jsp" %>
 
 <div class="leoss-box">
-	<form:form method="post" id="baseForm" commandName="user" action="/leoss_portal/setting/base">
+	<form:form method="post" id="baseForm" commandName="user" action="/Spring-Hibernate-Example/setting/base">
 	<form:hidden path="id" />
 	<form:hidden path="email"/>
     <div class="i-base">
